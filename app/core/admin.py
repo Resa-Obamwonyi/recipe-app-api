@@ -11,8 +11,8 @@ class UserAdmin(BaseUserAdmin):
         (None, {'fields': ('email', 'password')}),
         (_('Personal Info'), {'fields': ('name',)}),
         (_('Permissions'),
-            {'fields': ('is_active', 'is_staff', 'is_superuser')}
-        ),
+         {'fields': ('is_active', 'is_staff', 'is_superuser')}
+         ),
         (_('important dates'), {'fields': ('last_login',)})
     ]
 
@@ -23,7 +23,5 @@ class UserAdmin(BaseUserAdmin):
         }),
     )
 
+
 admin.site.register(models.User, UserAdmin)
-
-
-
